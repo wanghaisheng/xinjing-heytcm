@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心镜 - 分享修行</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">9:41</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- 主界面 -->
+        <div class="main-screen">
+            <!-- 页面装饰 -->
+            <div class="decoration-element top-left"></div>
+            <div class="decoration-element top-right"></div>
+            <div class="decoration-element bottom-left"></div>
+            <div class="decoration-element bottom-right"></div>
+            
+            <!-- 顶部导航 -->
+            <div class="top-nav">
+                <div class="back-button">
+                    <a href="profile.html"><i class="fas fa-arrow-left"></i></a>
+                </div>
+                <h1 class="page-title">分享我的修行</h1>
+                <div class="nav-icons">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+
+            <!-- 分享内容 -->
+            <div class="main-content">
+                <div class="share-preview">
+                    <div class="share-card">
+                        <div class="share-header">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="用户头像" class="share-avatar">
+                            <div class="share-user-info">
+                                <div class="share-username">李明</div>
+                                <div class="share-level">心学修行者 · 初级</div>
+                            </div>
+                        </div>
+                        <div class="share-stats">
+                            <div class="share-stat-item">
+                                <div class="share-stat-value">36</div>
+                                <div class="share-stat-label">连续打卡</div>
+                            </div>
+                            <div class="share-stat-item">
+                                <div class="share-stat-value">75</div>
+                                <div class="share-stat-label">澄明值</div>
+                            </div>
+                            <div class="share-stat-item">
+                                <div class="share-stat-value">60</div>
+                                <div class="share-stat-label">躬行力</div>
+                            </div>
+                        </div>
+                        <div class="share-quote">
+                            <p>"吾心如镜，澄明照物，物来则应，物去不留"</p>
+                            <div class="share-source">— 王阳明《传习录》</div>
+                        </div>
+                        <div class="share-qrcode">
+                            <img src="../../../img/qr-code.svg" alt="二维码" class="qr-code-img">
+                            <div class="qr-code-text">扫码下载「心镜」App</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="share-options">
+                    <div class="share-title">分享至</div>
+                    <div class="share-platforms">
+                        <div class="share-platform-item">
+                            <div class="platform-icon wechat">
+                                <i class="fab fa-weixin"></i>
+                            </div>
+                            <div class="platform-name">微信</div>
+                        </div>
+                        <div class="share-platform-item">
+                            <div class="platform-icon weibo">
+                                <i class="fab fa-weibo"></i>
+                            </div>
+                            <div class="platform-name">微博</div>
+                        </div>
+                        <div class="share-platform-item">
+                            <div class="platform-icon qq">
+                                <i class="fab fa-qq"></i>
+                            </div>
+                            <div class="platform-name">QQ</div>
+                        </div>
+                        <div class="share-platform-item">
+                            <div class="platform-icon more">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <div class="platform-name">更多</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="share-actions">
+                    <button class="action-button">
+                        <i class="fas fa-download"></i>
+                        <span>保存图片</span>
+                    </button>
+                    <button class="action-button secondary" onclick="window.location.href='profile.html'">
+                        <i class="fas fa-times"></i>
+                        <span>取消</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="bottom-nav">
+            <div class="nav-item">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-home"></i>
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="suggestion-library.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-compass"></i>
+                    <span>探索</span>
+                </a>
+            </div>
+            <div class="nav-item center-item">
+                <a href="meditation.html" style="text-decoration: none; color: inherit;">
+                    <div class="center-btn">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="journal.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-chart-line"></i>
+                    <span>成长</span>
+                </a>
+            </div>
+            <div class="nav-item active">
+                <a href="profile.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-user"></i>
+                    <span>我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .share-preview {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .share-card {
+            background-color: white;
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(109, 76, 65, 0.1);
+        }
+        
+        .share-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .share-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: var(--radius-full);
+            object-fit: cover;
+            margin-right: var(--spacing-sm);
+        }
+        
+        .share-username {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+        }
+        
+        .share-level {
+            font-size: 14px;
+            color: var(--text-secondary);
+            font-family: var(--font-heading);
+        }
+        
+        .share-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .share-stat-item {
+            text-align: center;
+        }
+        
+        .share-stat-value {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+        }
+        
+        .share-stat-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            font-family: var(--font-heading);
+        }
+        
+        .share-quote {
+            background-color: var(--bg-medium);
+            border-radius: var(--radius-sm);
+            padding: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+            font-family: var(--font-heading);
+            font-style: italic;
+        }
+        
+        .share-quote p {
+            font-size: 16px;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .share-source {
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-align: right;
+        }
+        
+        .share-qrcode {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .qr-code-img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 5px;
+        }
+        
+        .qr-code-text {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .share-options {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .share-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-sm);
+            font-family: var(--font-heading);
+        }
+        
+        .share-platforms {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .share-platform-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .platform-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: var(--radius-full);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+        }
+        
+        .wechat {
+            background-color: #07C160;
+        }
+        
+        .weibo {
+            background-color: #E6162D;
+        }
+        
+        .qq {
+            background-color: #12B7F5;
+        }
+        
+        .more {
+            background-color: #8d6e63;
+        }
+        
+        .platform-name {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .share-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+    </style>
+</body>
+</html>

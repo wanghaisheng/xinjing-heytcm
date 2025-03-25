@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心镜 - 共修社区</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">9:41</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- 主界面 -->
+        <div class="main-screen">
+            <!-- 页面装饰 -->
+            <div class="decoration-element top-left"></div>
+            <div class="decoration-element top-right"></div>
+            <div class="decoration-element bottom-left"></div>
+            <div class="decoration-element bottom-right"></div>
+            
+            <!-- 顶部导航 -->
+            <div class="top-nav">
+                <div class="back-button">
+                    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+                </div>
+                <h1 class="page-title">共修社区</h1>
+                <div class="nav-icons">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <!-- 共修社区内容 -->
+            <div class="main-content">
+                <div class="community-header">
+                    <div class="section-title">今日热门话题</div>
+                </div>
+                
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-author">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="用户头像" class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name">心外无物1987</div>
+                                <div class="post-time">2小时前</div>
+                            </div>
+                        </div>
+                        <div class="topic-content">
+                            <div class="topic-text">如何在现代快节奏的生活中保持"不动心"的状态？我尝试过冥想，但总是容易被外界打扰，各位有什么好的心得吗？</div>
+                            <div class="topic-tags">
+                                <span class="tag">#不动心</span>
+                                <span class="tag">#现代生活</span>
+                                <span class="tag">#冥想</span>
+                            </div>
+                        </div>
+                        <div class="topic-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-comment"></i>
+                                <span>28</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-heart"></i>
+                                <span>42</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-bookmark"></i>
+                                <span>15</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="topic-item">
+                        <div class="topic-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="用户头像" class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name">致良知1990</div>
+                                <div class="post-time">5小时前</div>
+                            </div>
+                        </div>
+                        <div class="topic-content">
+                            <div class="topic-text">分享一个实践"知行合一"的小案例：最近工作中遇到困难，利用App中的暗示语"事上磨练，方知本心"，坚持每天面对难题而非回避。两周后，不仅解决了问题，心境也平和许多。</div>
+                            <div class="topic-tags">
+                                <span class="tag">#知行合一</span>
+                                <span class="tag">#实践案例</span>
+                                <span class="tag">#事上磨练</span>
+                            </div>
+                            <div class="topic-image">
+                                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="实践图片">
+                            </div>
+                        </div>
+                        <div class="topic-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-comment"></i>
+                                <span>36</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-heart"></i>
+                                <span>87</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-bookmark"></i>
+                                <span>23</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="community-section">
+                    <div class="section-header">
+                        <div class="section-title">热门共修小组</div>
+                        <div class="view-more">更多</div>
+                    </div>
+                    <div class="group-list">
+                        <div class="group-item">
+                            <div class="group-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="group-info">
+                                <div class="group-name">传习录读书会</div>
+                                <div class="group-members">328 成员</div>
+                            </div>
+                            <button class="group-join-btn">加入</button>
+                        </div>
+                        <div class="group-item">
+                            <div class="group-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="group-info">
+                                <div class="group-name">职场心学实践</div>
+                                <div class="group-members">256 成员</div>
+                            </div>
+                            <button class="group-join-btn joined">已加入</button>
+                        </div>
+                        <div class="group-item">
+                            <div class="group-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="group-info">
+                                <div class="group-name">家庭和谐之道</div>
+                                <div class="group-members">193 成员</div>
+                            </div>
+                            <button class="group-join-btn">加入</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="community-section">
+                    <div class="section-header">
+                        <div class="section-title">推荐用户</div>
+                        <div class="view-more">换一批</div>
+                    </div>
+                    <div class="user-list">
+                        <div class="user-item">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="用户头像" class="user-avatar">
+                            <div class="user-info">
+                                <div class="user-name">龙场悟道1234</div>
+                                <div class="user-bio">心学研究者，专注内在成长</div>
+                            </div>
+                            <button class="user-follow-btn">关注</button>
+                        </div>
+                        <div class="user-item">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="用户头像" class="user-avatar">
+                            <div class="user-info">
+                                <div class="user-name">知行合一5678</div>
+                                <div class="user-bio">心灵导师，致力分享实践经验</div>
+                            </div>
+                            <button class="user-follow-btn following">已关注</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="bottom-nav">
+            <div class="nav-item">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-home"></i>
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="suggestion-library.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-compass"></i>
+                    <span>探索</span>
+                </a>
+            </div>
+            <div class="nav-item center-item">
+                <a href="meditation.html" style="text-decoration: none; color: inherit;">
+                    <div class="center-btn">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="journal.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-chart-line"></i>
+                    <span>成长</span>
+                </a>
+            </div>
+            <div class="nav-item active">
+                <a href="profile.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-user"></i>
+                    <span>我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .community-header {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .topic-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .topic-item {
+            background-color: white;
+            border-radius: var(--radius-md);
+            padding: var(--spacing-sm);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(109, 76, 65, 0.1);
+        }
+        
+        .topic-author {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-full);
+            object-fit: cover;
+            margin-right: var(--spacing-xs);
+        }
+        
+        .author-info {
+            flex: 1;
+        }
+        
+        .author-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+        }
+        
+        .post-time {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .topic-content {
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .topic-text {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: var(--spacing-xs);
+            color: var(--text-primary);
+        }
+        
+        .topic-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .tag {
+            background-color: var(--bg-medium);
+            color: var(--text-secondary);
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: var(--radius-full);
+        }
+        
+        .topic-image {
+            margin-top: var(--spacing-xs);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+        
+        .topic-image img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        
+        .topic-stats {
+            display: flex;
+            justify-content: flex-end;
+            gap: var(--spacing-md);
+        }
+        
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        .community-section {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .group-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+        
+        .group-item {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: var(--radius-md);
+            padding: var(--spacing-sm);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(109, 76, 65, 0.1);
+        }
+        
+        .group-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-md);
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: var(--spacing-sm);
+        }
+        
+        .group-info {
+            flex: 1;
+        }
+        
+        .group-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+        }
+        
+        .group-members {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .group-join-btn {
+            padding: 5px 15px;
+            border-radius: var(--radius-full);
+            font-size: 12px;
+            border: 1px solid var(--primary-color);
+            background-color: transparent;
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .group-join-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .group-join-btn.joined {
+            background-color: var(--bg-medium);
+            border-color: var(--bg-medium);
+            color: var(--text-secondary);
+        }
+        
+        .user-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+        
+        .user-item {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: var(--radius-md);
+            padding: var(--spacing-sm);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(109, 76, 65, 0.1);
+        }
+        
+        .user-info {
+            flex: 1;
+            margin-left: var(--spacing-sm);
+        }
+        
+        .user-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+        }
+        
+        .user-bio {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .user-follow-btn {
+            padding: 5px 15px;
+            border-radius: var(--radius-full);
+            font-size: 12px;
+            border: 1px solid var(--primary-color);
+            background-color: transparent;
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .user-follow-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .user-follow-btn.following {
+            background-color: var(--bg-medium);
+            border-color: var(--bg-medium);
+            color: var(--text-secondary);
+        }
+    </style>
+</body>
+</html>

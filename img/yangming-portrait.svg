@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <!-- Background -->
+  <rect width="400" height="500" fill="#f7f5f2" />
+  
+  <!-- Frame -->
+  <rect x="20" y="20" width="360" height="460" fill="none" stroke="#866a5a" stroke-width="3" />
+  
+  <!-- Ink wash background -->
+  <ellipse cx="200" cy="250" rx="150" ry="200" fill="#e9e5e0" />
+  
+  <!-- Stylized portrait - Head and shoulders silhouette -->
+  <path d="M200,100 C230,100 260,120 270,150 C280,180 280,220 270,250 C260,280 240,300 200,300 C160,300 140,280 130,250 C120,220 120,180 130,150 C140,120 170,100 200,100 Z" fill="#3a3a3a" />
+  
+  <!-- Stylized traditional Chinese scholar hat -->
+  <path d="M140,140 L260,140 L250,100 L150,100 Z" fill="#3a3a3a" />
+  
+  <!-- Stylized robe -->
+  <path d="M150,300 L130,400 L270,400 L250,300 C230,320 170,320 150,300 Z" fill="#3a3a3a" />
+  
+  <!-- Stylized facial features - eyes -->
+  <ellipse cx="175" cy="180" rx="5" ry="3" fill="#252525" />
+  <ellipse cx="225" cy="180" rx="5" ry="3" fill="#252525" />
+  
+  <!-- Stylized facial features - nose and mouth -->
+  <path d="M200,190 L190,205 L210,205" fill="none" stroke="#252525" stroke-width="2" />
+  <path d="M185,225 C190,230 210,230 215,225" fill="none" stroke="#252525" stroke-width="2" />
+  
+  <!-- Stylized beard -->
+  <path d="M175,220 C160,240 150,270 160,300" fill="none" stroke="#252525" stroke-width="2" />
+  <path d="M225,220 C240,240 250,270 240,300" fill="none" stroke="#252525" stroke-width="2" />
+  <path d="M200,230 C200,260 200,280 200,300" fill="none" stroke="#252525" stroke-width="2" />
+  
+  <!-- Signature-like calligraphy strokes -->
+  <path d="M300,400 C310,390 320,410 330,400" fill="none" stroke="#866a5a" stroke-width="3" />
+  <path d="M320,420 C310,430 330,440 320,450" fill="none" stroke="#866a5a" stroke-width="3" />
+  
+  <!-- Stylized Chinese character for "heart" (心) bottom right -->
+  <path d="M330,450 L350,430 M330,430 L350,450 M340,420 L340,460" fill="none" stroke="#ab7d64" stroke-width="3" />
+</svg>
+

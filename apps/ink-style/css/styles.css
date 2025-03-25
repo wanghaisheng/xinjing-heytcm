@@ -1,0 +1,431 @@
+:root {
+    /* 主题颜色 - 水墨风格 */
+    --primary-color: #3a3a3a;
+    --secondary-color: #866a5a;
+    --accent-color: #ab7d64;
+    --light-color: #f7f5f2;
+    --dark-color: #252525;
+    
+    /* 背景颜色 */
+    --bg-light: #f7f5f2;
+    --bg-medium: #e9e5e0;
+    --bg-dark: #252525;
+    
+    /* 文本颜色 */
+    --text-primary: #252525;
+    --text-secondary: #555555;
+    --text-light: #f7f5f2;
+    
+    /* 字体 */
+    --font-heading: 'Noto Serif SC', serif;
+    --font-body: 'Noto Sans SC', sans-serif;
+    
+    /* 间距 */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    
+    /* 圆角 */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+    
+    /* 阴影 */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* 动画 */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: #252525;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    width: 375px;
+    height: 812px;
+    background-color: var(--bg-light);
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 状态栏 */
+.status-bar {
+    height: 44px;
+    background-color: var(--bg-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.status-bar-icons {
+    display: flex;
+    gap: 5px;
+}
+
+/* 主界面 */
+.main-screen {
+    height: calc(100% - 44px - 83px);
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* 顶部导航 */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.username {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.nav-icons {
+    position: relative;
+}
+
+.notification-icon {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    border-radius: var(--radius-full);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 暗示卡片 */
+.suggestion-card {
+    background-color: white;
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.ink-decoration {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--bg-medium);
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--bg-medium);
+}
+
+.card-header {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.suggestion-text {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.suggestion-source {
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-align: right;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: color var(--transition-fast);
+}
+
+.action-btn:hover {
+    color: var(--accent-color);
+}
+
+/* 能量指标 */
+.energy-metrics {
+    background-color: white;
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.metric-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.metrics-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.metric-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.metric-circle {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.metric-name {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+/* 功能入口 */
+.feature-entries {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.entry-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.entry-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-md);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: var(--secondary-color);
+    transition: all var(--transition-fast);
+    box-shadow: var(--shadow-sm);
+}
+
+.entry-item:hover .entry-icon {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.entry-name {
+    font-size: 12px;
+    color: var(--text-primary);
+}
+
+/* 最近暗示记录 */
+.recent-records {
+    background-color: white;
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.records-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.records-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.view-all {
+    font-size: 14px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.records-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.record-item {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.record-time {
+    min-width: 80px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.record-content {
+    flex: 1;
+}
+
+.record-text {
+    font-size: 14px;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.record-scenario {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+/* 底部导航栏 */
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 83px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid var(--bg-medium);
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-item i {
+    font-size: 20px;
+    color: var(--text-secondary);
+}
+
+.nav-item span {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.nav-item.active i,
+.nav-item.active span {
+    color: var(--secondary-color);
+}
+
+.center-btn {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-radius: var(--radius-full);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.center-btn i {
+    font-size: 20px;
+    color: white !important;
+}
+
+/* 滚动条样式 */
+.main-screen::-webkit-scrollbar {
+    width: 4px;
+}
+
+.main-screen::-webkit-scrollbar-track {
+    background: var(--bg-light);
+}
+
+.main-screen::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: var(--radius-full);
+}
+

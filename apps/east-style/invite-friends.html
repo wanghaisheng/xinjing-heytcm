@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心镜 - 邀请好友</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">9:41</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- 主界面 -->
+        <div class="main-screen">
+            <!-- 页面装饰 -->
+            <div class="decoration-element top-left"></div>
+            <div class="decoration-element top-right"></div>
+            <div class="decoration-element bottom-left"></div>
+            <div class="decoration-element bottom-right"></div>
+            
+            <!-- 顶部导航 -->
+            <div class="top-nav">
+                <div class="back-button">
+                    <a href="profile.html"><i class="fas fa-arrow-left"></i></a>
+                </div>
+                <h1 class="page-title">邀请好友同修</h1>
+                <div class="nav-icons">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+            </div>
+
+            <!-- 邀请内容 -->
+            <div class="main-content">
+                <div class="invite-banner">
+                    <img src="https://images.unsplash.com/photo-1522543558187-768b6df7c25c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="邀请banner" class="invite-banner-img">
+                    <div class="invite-banner-text">
+                        <h2>同心共修，道不孤单</h2>
+                        <p>邀请好友一起成长，获取7天专业版体验</p>
+                    </div>
+                </div>
+                
+                <div class="invite-rewards">
+                    <div class="invite-rewards-title">邀请奖励</div>
+                    <div class="rewards-list">
+                        <div class="reward-item">
+                            <div class="reward-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div class="reward-text">
+                                <div class="reward-title">好友注册成功</div>
+                                <div class="reward-desc">双方各获得7天专业版体验</div>
+                            </div>
+                        </div>
+                        <div class="reward-item">
+                            <div class="reward-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="reward-text">
+                                <div class="reward-title">好友开通专业版</div>
+                                <div class="reward-desc">你将获得30天专业版体验</div>
+                            </div>
+                        </div>
+                        <div class="reward-item">
+                            <div class="reward-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="reward-text">
+                                <div class="reward-title">邀请5位好友</div>
+                                <div class="reward-desc">解锁专属修行勋章"引路者"</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="invite-qrcode">
+                    <div class="qrcode-container">
+                        <img src="../../../img/qr-code.svg" alt="邀请二维码" class="qrcode-img">
+                        <div class="qrcode-text">扫码下载「心镜」App</div>
+                    </div>
+                    <div class="invite-code">
+                        <div class="invite-code-label">我的邀请码</div>
+                        <div class="invite-code-value">XJLM3698</div>
+                    </div>
+                </div>
+                
+                <div class="invite-methods">
+                    <div class="invite-methods-title">邀请方式</div>
+                    <div class="methods-grid">
+                        <div class="method-item">
+                            <div class="method-icon wechat">
+                                <i class="fab fa-weixin"></i>
+                            </div>
+                            <div class="method-name">微信</div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-icon qq">
+                                <i class="fab fa-qq"></i>
+                            </div>
+                            <div class="method-name">QQ</div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-icon message">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <div class="method-name">短信</div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-icon copy">
+                                <i class="fas fa-copy"></i>
+                            </div>
+                            <div class="method-name">复制链接</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="invite-friends-records">
+                    <div class="records-title">已邀请好友 (2)</div>
+                    <div class="friends-list">
+                        <div class="friend-item">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="好友头像" class="friend-avatar">
+                            <div class="friend-info">
+                                <div class="friend-name">张雯</div>
+                                <div class="friend-status">已注册</div>
+                            </div>
+                            <div class="friend-reward">+7天</div>
+                        </div>
+                        <div class="friend-item">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="好友头像" class="friend-avatar">
+                            <div class="friend-info">
+                                <div class="friend-name">王建国</div>
+                                <div class="friend-status premium">已开通专业版</div>
+                            </div>
+                            <div class="friend-reward premium">+30天</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="bottom-nav">
+            <div class="nav-item">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-home"></i>
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="suggestion-library.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-compass"></i>
+                    <span>探索</span>
+                </a>
+            </div>
+            <div class="nav-item center-item">
+                <a href="meditation.html" style="text-decoration: none; color: inherit;">
+                    <div class="center-btn">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="journal.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-chart-line"></i>
+                    <span>成长</span>
+                </a>
+            </div>
+            <div class="nav-item active">
+                <a href="profile.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-user"></i>
+                    <span>我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .invite-banner {
+            position: relative;
+            margin-bottom: var(--spacing-md);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 150px;
+        }
+        
+        .invite-banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .invite-banner-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(109, 76, 65, 0.8), rgba(109, 76, 65, 0.4));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: var(--spacing-md);
+            color: white;
+        }
+        
+        .invite-banner-text h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-family: var(--font-heading);
+        }
+        
+        .invite-banner-text p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .invite-rewards {
+            background-color: white;
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(109, 76, 65, 0.1);
+        }
+        
+        .invite-rewards-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-sm);
+            font-family: var(--font-heading);
+        }
+        
+        .rewards-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+        
+        .reward-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .reward-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-full);
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+        }
+        
+        .reward-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+        }
+        
+        .reward-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .invite-qrcode {
+            background-color: white;
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(109, 76, 65, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .qrcode-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .qrcode-img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 5px;
+        }
+        
+        .qrcode-text {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .invite-code {
+            text-align: center;
+        }
+        
+        .invite-code-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 5px;
+        }
+        
+        .invite-code-value {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+            letter-spacing: 1px;
+        }
+        
+        .invite-methods {
+            background-color: white;
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(109, 76, 65, 0.1);
+        }
+        
+        .invite-methods-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-sm);
+            font-family: var(--font-heading);
+        }
+        
+        .methods-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-sm);
+        }
+        
+        .method-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .method-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: var(--radius-full);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+        }
+        
+        .wechat {
+            background-color: #07C160;
+        }
+        
+        .qq {
+            background-color: #12B7F5;
+        }
+        
+        .message {
+            background-color: #3498db;
+        }
+        
+        .copy {
+            background-color: #8d6e63;
+        }
+        
+        .method-name {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .invite-friends-records {
+            background-color: white;
+            border-radius: var(--radius-md);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(109, 76, 65, 0.1);
+        }
+        
+        .records-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-sm);
+            font-family: var(--font-heading);
+        }
+        
+        .friends-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+        
+        .friend-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .friend-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-full);
+            object-fit: cover;
+            margin-right: var(--spacing-sm);
+        }
+        
+        .friend-info {
+            flex: 1;
+        }
+        
+        .friend-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+        }
+        
+        .friend-status {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .friend-status.premium {
+            color: #e6a23c;
+        }
+        
+        .friend-reward {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .friend-reward.premium {
+            color: #e6a23c;
+        }
+    </style>
+</body>
+</html>

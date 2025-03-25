@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心镜 - 冥想练习</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">9:41</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- 主界面 -->
+        <div class="main-screen">
+            <!-- 页面装饰 -->
+            <div class="decoration-element top-left"></div>
+            <div class="decoration-element top-right"></div>
+            <div class="decoration-element bottom-left"></div>
+            <div class="decoration-element bottom-right"></div>
+            
+            <!-- 顶部导航 -->
+            <div class="top-nav">
+                <div class="back-button">
+                    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+                </div>
+                <h1 class="page-title">冥想练习</h1>
+                <div class="nav-icons">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+            </div>
+
+            <!-- 冥想练习内容 -->
+            <div class="main-content">
+                <div class="meditation-header">
+                    <div class="section-title">今日推荐</div>
+                    <div class="section-subtitle">基于您的心学能量指标，为您推荐的冥想练习</div>
+                </div>
+                
+                <div class="meditation-card">
+                    <div class="meditation-image">
+                        <img src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="心如明镜冥想">
+                    </div>
+                    <div class="meditation-content">
+                        <h3 class="meditation-title">心如明镜冥想</h3>
+                        <p class="meditation-desc">基于"心即理"原理，通过十分钟的引导，帮助您清除杂念，恢复心灵澄明状态。</p>
+                        <div class="meditation-details">
+                            <span><i class="fas fa-clock"></i> 10分钟</span>
+                            <span><i class="fas fa-headphones"></i> 引导冥想</span>
+                        </div>
+                        <button class="meditation-btn primary">
+                            <i class="fas fa-play"></i>
+                            <span>开始练习</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="meditation-section">
+                    <div class="section-header">
+                        <div class="section-title">冥想分类</div>
+                        <div class="view-more">查看全部</div>
+                    </div>
+                    <div class="meditation-categories">
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="category-name">专注力</div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="category-name">良知修炼</div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <div class="category-name">情绪平衡</div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <div class="category-name">睡眠</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="meditation-section">
+                    <div class="section-header">
+                        <div class="section-title">热门冥想</div>
+                        <div class="view-more">更多</div>
+                    </div>
+                    <div class="meditation-list">
+                        <div class="meditation-item">
+                            <div class="meditation-item-image">
+                                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="不动心练习">
+                                <div class="meditation-duration">5分钟</div>
+                            </div>
+                            <div class="meditation-item-title">不动心练习</div>
+                        </div>
+                        <div class="meditation-item">
+                            <div class="meditation-item-image">
+                                <img src="https://images.unsplash.com/photo-1476611317561-60117649dd94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" alt="致良知冥想">
+                                <div class="meditation-duration">15分钟</div>
+                            </div>
+                            <div class="meditation-item-title">致良知冥想</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="meditation-section">
+                    <div class="section-header">
+                        <div class="section-title">冥想历程</div>
+                    </div>
+                    <div class="meditation-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">32</div>
+                            <div class="stat-label">总次数</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">6小时</div>
+                            <div class="stat-label">总时长</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">8天</div>
+                            <div class="stat-label">连续练习</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="bottom-nav">
+            <div class="nav-item">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-home"></i>
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="nav-item active">
+                <a href="suggestion-library.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-compass"></i>
+                    <span>探索</span>
+                </a>
+            </div>
+            <div class="nav-item center-item">
+                <a href="meditation.html" style="text-decoration: none; color: inherit;">
+                    <div class="center-btn">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="journal.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-chart-line"></i>
+                    <span>成长</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="profile.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-user"></i>
+                    <span>我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .meditation-card {
+            background-color: white;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(109, 76, 65, 0.1);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .meditation-image img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .meditation-content {
+            padding: var(--spacing-sm);
+        }
+        
+        .meditation-title {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .meditation-desc {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .meditation-details {
+            display: flex;
+            gap: var(--spacing-sm);
+            margin-bottom: 15px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        
+        .meditation-btn {
+            width: 100%;
+            padding: 10px;
+            border-radius: var(--radius-md);
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-heading);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .meditation-btn.primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .meditation-btn.primary:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .meditation-header {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .section-subtitle {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+        
+        .meditation-categories {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .meditation-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .meditation-item {
+            background-color: white;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(109, 76, 65, 0.1);
+        }
+        
+        .meditation-item-image {
+            position: relative;
+        }
+        
+        .meditation-item-image img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+        
+        .meditation-duration {
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 3px 8px;
+            border-radius: var(--radius-full);
+            font-size: 12px;
+        }
+        
+        .meditation-item-title {
+            padding: 8px;
+            font-size: 14px;
+            font-family: var(--font-heading);
+            color: var(--primary-color);
+        }
+        
+        .meditation-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .meditation-section {
+            margin-bottom: var(--spacing-md);
+        }
+    </style>
+</body>
+</html>

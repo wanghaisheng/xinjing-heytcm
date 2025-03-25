@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心镜 - 个人资料</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">9:41</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- 主界面 -->
+        <div class="main-screen">
+            <!-- 页面装饰 -->
+            <div class="decoration-element top-left"></div>
+            <div class="decoration-element top-right"></div>
+            <div class="decoration-element bottom-left"></div>
+            <div class="decoration-element bottom-right"></div>
+            
+            <!-- 顶部导航 -->
+            <div class="top-nav">
+                <div class="back-button">
+                    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+                </div>
+                <h1 class="page-title">个人资料</h1>
+                <div class="nav-icons">
+                    <i class="fas fa-cog"></i>
+                </div>
+            </div>
+
+            <!-- 个人资料内容 -->
+            <div class="main-content">
+                <div class="profile-header">
+                    <div class="avatar-frame large">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="用户头像" class="user-avatar">
+                    </div>
+                    <div class="profile-info">
+                        <h2 class="profile-name">李明</h2>
+                        <p class="profile-level">心学修行者 · 初级</p>
+                    </div>
+                </div>
+
+                <div class="stats-section">
+                    <div class="section-header">
+                        <div class="section-title">修行统计</div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-value">36</div>
+                            <div class="stat-label">连续打卡</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">128</div>
+                            <div class="stat-label">暗示记录</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">24</div>
+                            <div class="stat-label">心流日记</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">5</div>
+                            <div class="stat-label">良知感悟</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements-section">
+                    <div class="section-header">
+                        <div class="section-title">修行成就</div>
+                        <div class="view-more">查看全部</div>
+                    </div>
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                            <div class="achievement-icon unlocked">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="achievement-name">入门者</div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon unlocked">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="achievement-name">日记达人</div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon unlocked">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="achievement-name">良知启蒙</div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon locked">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="achievement-name">知行合一</div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon locked">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="achievement-name">心学大师</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions-section">
+                    <button class="action-button" onclick="window.location.href='share-profile.html'">
+                        <i class="fas fa-share-alt"></i>
+                        <span>分享我的修行</span>
+                    </button>
+                    <button class="action-button secondary" onclick="window.location.href='invite-friends.html'">
+                        <i class="fas fa-users"></i>
+                        <span>邀请好友同修</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="bottom-nav">
+            <div class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>首页</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-compass"></i>
+                <span>探索</span>
+            </div>
+            <div class="nav-item center-item">
+                <div class="center-btn">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>成长</span>
+            </div>
+            <div class="nav-item active">
+                <i class="fas fa-user"></i>
+                <span>我的</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

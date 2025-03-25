@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心镜 - 暗示库</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">9:41</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- 主界面 -->
+        <div class="main-screen">
+            <!-- 页面装饰 -->
+            <div class="decoration-element top-left"></div>
+            <div class="decoration-element top-right"></div>
+            <div class="decoration-element bottom-left"></div>
+            <div class="decoration-element bottom-right"></div>
+            
+            <!-- 顶部导航 -->
+            <div class="top-nav">
+                <div class="back-button">
+                    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+                </div>
+                <h1 class="page-title">暗示库</h1>
+                <div class="nav-icons">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <!-- 暗示库内容 -->
+            <div class="main-content">
+                <div class="search-section">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="搜索场景或暗示语...">
+                    </div>
+                </div>
+                
+                <div class="categories-section">
+                    <div class="section-header">
+                        <div class="section-title">按场景浏览</div>
+                    </div>
+                    <div class="categories-grid">
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="category-name">职场压力</div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="category-name">家庭关系</div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="category-name">情绪管理</div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="category-name">拖延克服</div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="category-name">人际冲突</div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="category-name">压力缓解</div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fas fa-bed"></i>
+                            </div>
+                            <div class="category-name">睡眠改善</div>
+                        </div>
+                        <div class="category-item">
+                            <div class="category-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="category-name">更多</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-section">
+                    <div class="section-header">
+                        <div class="section-title">热门暗示</div>
+                        <div class="view-more">更多</div>
+                    </div>
+                    <div class="suggestion-list">
+                        <div class="suggestion-card">
+                            <div class="suggestion-header">
+                                <div class="suggestion-scene">情绪管理</div>
+                                <div class="suggestion-saves"><i class="fas fa-bookmark"></i> 589</div>
+                            </div>
+                            <div class="suggestion-content">
+                                <p class="suggestion-text">"情绪如云，吾心如天，云散天自清"</p>
+                                <p class="suggestion-principle">【心即理】原理</p>
+                            </div>
+                            <div class="suggestion-footer">
+                                <button class="action-btn">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="action-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="action-btn primary">
+                                    <i class="fas fa-plus"></i>
+                                    <span>添加</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="suggestion-card">
+                            <div class="suggestion-header">
+                                <div class="suggestion-scene">拖延克服</div>
+                                <div class="suggestion-saves"><i class="fas fa-bookmark"></i> 472</div>
+                            </div>
+                            <div class="suggestion-content">
+                                <p class="suggestion-text">"知而不行，只是未知。立行则知至"</p>
+                                <p class="suggestion-principle">【知行合一】原理</p>
+                            </div>
+                            <div class="suggestion-footer">
+                                <button class="action-btn">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="action-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="action-btn primary">
+                                    <i class="fas fa-plus"></i>
+                                    <span>添加</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="suggestion-card">
+                            <div class="suggestion-header">
+                                <div class="suggestion-scene">人际冲突</div>
+                                <div class="suggestion-saves"><i class="fas fa-bookmark"></i> 356</div>
+                            </div>
+                            <div class="suggestion-content">
+                                <p class="suggestion-text">"一体之仁，推己及人，彼此本同根"</p>
+                                <p class="suggestion-principle">【致良知】原理</p>
+                            </div>
+                            <div class="suggestion-footer">
+                                <button class="action-btn">
+                                    <i class="fas fa-bookmark"></i>
+                                </button>
+                                <button class="action-btn">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                                <button class="action-btn primary">
+                                    <i class="fas fa-plus"></i>
+                                    <span>添加</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="bottom-nav">
+            <div class="nav-item">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-home"></i>
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="nav-item active">
+                <a href="suggestion-library.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-compass"></i>
+                    <span>探索</span>
+                </a>
+            </div>
+            <div class="nav-item center-item">
+                <a href="meditation.html" style="text-decoration: none; color: inherit;">
+                    <div class="center-btn">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="journal.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-chart-line"></i>
+                    <span>成长</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="profile.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-user"></i>
+                    <span>我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

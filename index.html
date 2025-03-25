@@ -1,132 +1,626 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta name="keywords" content="mobile, simulator, mobile design, mobile app">
-  <meta name="author" content="Your Name or Company">
-  <meta http-equiv="Content-Language" content="en">
-
-  <!-- Canonical Link -->
-  <link rel="canonical" href="https://www.yourwebsite.com/pc-simulator" />
-
-  <!-- Open Graph for Social Media -->
-  <meta property="og:title" content="PC Simulator">
-  <meta property="og:description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta property="og:image" content="https://www.yourwebsite.com/pc-simulator-image.jpg">
-  <meta property="og:url" content="https://www.yourwebsite.com/pc-simulator">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PC Simulator">
-  <meta name="twitter:description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta name="twitter:image" content="https://www.yourwebsite.com/pc-simulator-image.jpg">
-  <meta name="twitter:creator" content="@yourtwitterhandle">
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://www.yourwebsite.com/favicon.ico" type="image/x-icon">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-XXXXX-Y');
-  </script>
-
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y) {
-      window.clarity=window.clarity||function(){(clarity.q=clarity.q||[]).push(arguments)};
-      clarity('set', 'anonymizeIP', true);
-      i=l.createElement('script');i.async=1;i.src=r;i.type='text/javascript';
-      t=l.getElementsByTagName('script')[0];t.parentNode.insertBefore(i,t);
-    })(document,window,'script','https://www.clarity.ms/tag/XXXXXX');
-  </script>
-
-  <title>PC Simulator</title>
-
-  <style>
-    /* Global Styles */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    .mobile-container {
-      width: 360px;
-      height: 640px;
-      border: 16px solid black;
-      border-radius: 16px;
-      background-color: #fff;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .content {
-      font-size: 1.2rem;
-      color: #333;
-    }
-
-    /* Adjustments for PC */
-    @media (min-width: 768px) {
-      .mobile-container {
-        width: 600px;
-        height: 1000px;
-      }
-
-      .content {
-        font-size: 1.5rem;
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .mobile-container {
-        width: 800px;
-        height: 1400px;
-      }
-
-      .content {
-        font-size: 1.8rem;
-      }
-    }
-
-    /* Additional responsiveness for larger screens */
-    @media (min-width: 1200px) {
-      body {
-        justify-content: flex-start;
-      }
-
-      .mobile-container {
-        margin-top: 50px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心镜 - 阳明心学心理暗示实践助手</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="心镜 - 以心为镜，观照言行，知行合一的阳明心学心理暗示助手，帮助您将500年前的心学智慧应用于当代生活。">
+    <script src="js/i18n.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 </head>
-
 <body>
-  <div class="mobile-container">
-    <div class="content">
-      <p>Mobile Simulator Screen</p>
-      <p>PC Version: Adjusted for larger screens.</p>
+    <div class="language-toggle">
+        <button class="lang-btn active" data-lang="zh">中文</button>
+        <button class="lang-btn" data-lang="en">English</button>
     </div>
-  </div>
-</body>
 
+    <header class="hero">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="img/heart-mirror-logo.svg" alt="心镜 Logo" class="logo">
+            </div>
+            <h1 class="app-name" data-i18n="appName">「心镜」</h1>
+            <p class="tagline" data-i18n="tagline">阳明心学心理暗示实践助手</p>
+            <p class="sub-tagline" data-i18n="subTagline">以心为镜，观照言行，知行合一</p>
+            
+            <div class="cta-buttons">
+                <a href="#download" class="primary-btn download-btn" data-i18n="downloadBtn">立即下载</a>
+                <a href="#features" class="secondary-btn" data-i18n="learnMoreBtn">了解更多</a>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="device-mockup">
+                <div class="phone-frame">
+                    <iframe src="apps/east-style/index.html" class="app-preview"></iframe>
+                </div>
+            </div>
+            <div class="ink-animation">
+                <svg class="ink-splash" viewBox="0 0 200 200">
+                    <path d="M100,10 C120,30 150,20 160,40 C170,60 180,80 170,100 C160,120 140,140 120,150 C100,160 80,170 60,160 C40,150 20,130 10,110 C0,90 10,70 20,50 C30,30 50,10 70,10 C80,10 90,10 100,10 Z" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <section id="problem" class="problem">
+        <div class="container">
+            <h2 class="section-title" data-i18n="problemTitle">现代人的心理困境</h2>
+            
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 data-i18n="problem1Title">心智内耗严重</h3>
+                    <p data-i18n="problem1Desc">日常琐事和信息爆炸导致注意力分散，缺乏有效的心灵自我管理工具</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 data-i18n="problem2Title">知行脱节</h3>
+                    <p data-i18n="problem2Desc">明明知道该怎么做，却难以付诸行动，自我成长停留在"知道"层面</p>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-heart-broken"></i>
+                    </div>
+                    <h3 data-i18n="problem3Title">良知蒙蔽</h3>
+                    <p data-i18n="problem3Desc">浮躁社会中道德感知能力减弱，缺乏有效的良知唤醒机制</p>
+                </div>
+            </div>
+            
+            <div class="testimonial problem-testimonial">
+                <div class="quote-mark">"</div>
+                <p class="quote-text" data-i18n="problemQuote">我常常陷入内耗和自我怀疑，明明知道应该怎么做，却总是拖延和犹豫...</p>
+                <div class="quote-author" data-i18n="problemQuoteAuthor">—— 陈女士，32岁，职场人士</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solution" class="solution">
+        <div class="container">
+            <h2 class="section-title" data-i18n="solutionTitle">500年前的心学智慧，成为当代人的心理操作系统</h2>
+            
+            <div class="solution-intro">
+                <div class="solution-image">
+                    <img src="img/yangming-portrait.svg" alt="王阳明肖像" class="yangming-portrait">
+                </div>
+                <div class="solution-text">
+                    <h3 data-i18n="solutionSubtitle">为什么是阳明心学？</h3>
+                    <p data-i18n="solutionDesc">阳明心学是中国哲学史上的巅峰之作，强调"心即理"、"知行合一"和"致良知"。它教导我们向内寻求答案，通过实践和反思实现个人成长。心镜App将这套古老智慧体系与现代心理暗示方法相结合，为当代人提供了一套实用的心理调适工具。</p>
+                </div>
+            </div>
+            
+            <div class="philosophy-principles">
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <svg viewBox="0 0 100 100" class="heart-icon">
+                            <path d="M50,30 C40,10 10,10 10,40 C10,70 50,90 50,90 C50,90 90,70 90,40 C90,10 60,10 50,30 Z" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="principle1Title">心即理</h3>
+                    <p data-i18n="principle1Desc">一切外在境遇皆由心所生，通过暗示重塑认知，影响对现实的感知</p>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <svg viewBox="0 0 100 100" class="action-icon">
+                            <circle cx="50" cy="50" r="40" class="action-circle" />
+                            <path d="M35,50 L45,60 L65,40" class="action-check" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="principle2Title">知行合一</h3>
+                    <p data-i18n="principle2Desc">心理暗示驱动实际行动，消除知与行的鸿沟，让智慧落地生根</p>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <svg viewBox="0 0 100 100" class="conscience-icon">
+                            <circle cx="50" cy="50" r="40" class="conscience-circle" />
+                            <circle cx="50" cy="50" r="15" class="conscience-inner" />
+                            <path d="M50,10 L50,20 M90,50 L80,50 M50,90 L50,80 M10,50 L20,50" class="conscience-rays" />
+                        </svg>
+                    </div>
+                    <h3 data-i18n="principle3Title">致良知</h3>
+                    <p data-i18n="principle3Desc">唤醒内心道德直觉，通过暗示激活良知，避免自我欺骗</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-i18n="featuresTitle">六大核心功能</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 100 100" class="feature-svg">
+                            <rect x="20" y="20" width="60" height="60" rx="5" class="feature-base" />
+                            <path d="M30,40 L70,40 M30,50 L70,50 M30,60 L70,60" class="feature-lines" />
+                            <circle cx="75" cy="25" r="15" class="feature-badge" />
+                            <text x="75" y="30" class="feature-number">1</text>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="feature1Title">情境感知智能暗示库</h3>
+                    <p data-i18n="feature1Desc">AI场景识别，自动匹配阳明心学经典暗示语，为不同情境提供心智支持</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 100 100" class="feature-svg">
+                            <rect x="20" y="20" width="60" height="60" rx="5" class="feature-base" />
+                            <path d="M30,35 L70,35 M30,45 L60,45 M30,55 L50,55 M30,65 L40,65" class="feature-lines" />
+                            <circle cx="75" cy="25" r="15" class="feature-badge" />
+                            <text x="75" y="30" class="feature-number">2</text>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="feature2Title">心流日记</h3>
+                    <p data-i18n="feature2Desc">三重记录体系：事件、暗示效果及良知感悟，以区块链技术保存心灵成长轨迹</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 100 100" class="feature-svg">
+                            <rect x="20" y="20" width="60" height="60" rx="5" class="feature-base" />
+                            <path d="M35,40 C35,40 45,30 50,40 C55,50 65,40 65,40" class="feature-wave" />
+                            <path d="M35,60 C35,60 45,50 50,60 C55,70 65,60 65,60" class="feature-wave" />
+                            <circle cx="75" cy="25" r="15" class="feature-badge" />
+                            <text x="75" y="30" class="feature-number">3</text>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="feature3Title">冲突化解模拟器</h3>
+                    <p data-i18n="feature3Desc">预设七大矛盾场景，通过VR全息情景训练化解冲突，提升良知应用能力</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 100 100" class="feature-svg">
+                            <circle cx="50" cy="50" r="30" class="feature-circle" />
+                            <path d="M50,20 L50,35 M65,35 L75,25 M65,65 L75,75 M35,65 L25,75 M35,35 L25,25" class="feature-rays" />
+                            <circle cx="75" cy="25" r="15" class="feature-badge" />
+                            <text x="75" y="30" class="feature-number">4</text>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="feature4Title">心学能量环</h3>
+                    <p data-i18n="feature4Desc">可视化系统：澄明值、躬行力、良知度三项指标构成个人成长数据仪表盘</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 100 100" class="feature-svg">
+                            <circle cx="35" cy="40" r="15" class="feature-person" />
+                            <circle cx="65" cy="40" r="15" class="feature-person" />
+                            <circle cx="50" cy="70" r="15" class="feature-person" />
+                            <circle cx="75" cy="25" r="15" class="feature-badge" />
+                            <text x="75" y="30" class="feature-number">5</text>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="feature5Title">共修社区——「千圣同心」</h3>
+                    <p data-i18n="feature5Desc">匿名互助机制，以阳明经典语录为代号，互相启发成长，共建当代传习录</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 100 100" class="feature-svg">
+                            <rect x="30" y="30" width="40" height="40" rx="5" class="feature-base" />
+                            <path d="M40,50 L60,50 M50,40 L50,60" class="feature-plus" />
+                            <path d="M30,20 L70,20" class="feature-top" />
+                            <path d="M30,80 L70,80" class="feature-bottom" />
+                            <circle cx="75" cy="25" r="15" class="feature-badge" />
+                            <text x="75" y="30" class="feature-number">6</text>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="feature6Title">晨昏定省机器人</h3>
+                    <p data-i18n="feature6Desc">卯酉二时定期推送，晨间设定心学主题，晚间语音问答复盘，形成修身闭环</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="app-preview" class="app-preview">
+        <div class="container">
+            <h2 class="section-title" data-i18n="appPreviewTitle">App 截图</h2>
+            <p class="preview-subtitle" data-i18n="appPreviewSubtitle">探索心镜的沉浸式体验，直观感受阳明心学如何转化为日常实践工具</p>
+            
+            <div class="preview-tabs">
+                <button class="tab-btn active" data-tab="east-style" data-i18n="styleEast">东方美学风格</button>
+            </div>
+            
+            <div class="preview-content">
+                <div class="tab-content active" id="east-style">
+                    <div class="style-description">
+                        <h3 data-i18n="eastStyleTitle">东方美学风格</h3>
+                        <p data-i18n="eastStyleDesc">融合传统东方元素与现代交互设计，体现"和而不同"的中庸之道美学</p>
+                    </div>
+                    <div class="screens-container">
+                        <div class="screen-scroll">
+                            <iframe src="apps/east-style/index.html" class="app-frame"></iframe>
+                            <iframe src="apps/east-style/journal.html" class="app-frame"></iframe>
+                            <iframe src="apps/east-style/suggestion-library.html" class="app-frame"></iframe>
+                            <iframe src="apps/east-style/profile.html" class="app-frame"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="full-demo-cta">
+                <a href="apps/base/onboarding-preview/index.html" class="demo-btn" data-i18n="fullDemoBtn">体验完整App演示</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-i18n="testimonialsTitle">用户心得</h2>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="quote-mark">"</div>
+                        <p class="quote-text" data-i18n="testimonial1">自从使用心镜，我开始养成每晚反思的习惯。"致良知三问"帮我识别了很多以前忽视的自我欺骗。工作中的抉择更有原则性，不再患得患失。</p>
+                        <div class="testimonial-author">
+                            <img src="img/user1.jpg" alt="用户头像" class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name" data-i18n="testimonialName1">李明</div>
+                                <div class="author-title" data-i18n="testimonialTitle1">企业管理者, 42岁</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-mark">"</div>
+                        <p class="quote-text" data-i18n="testimonial2">"心即理"的暗示帮我走出了产后抑郁。当情绪低落时，App会提醒我"心生万境，境由心转"，教我转换视角看问题。我逐渐学会了与自己的消极情绪和平相处。</p>
+                        <div class="testimonial-author">
+                            <img src="img/user2.jpg" alt="用户头像" class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name" data-i18n="testimonialName2">张雯</div>
+                                <div class="author-title" data-i18n="testimonialTitle2">全职妈妈, 29岁</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-mark">"</div>
+                        <p class="quote-text" data-i18n="testimonial3">我原本只是为了备考心理咨询师才下载心镜，结果发现这比任何心理学教材都实用。它不仅理论与实践结合，更让我体会到东方智慧的深刻。现在我向来访者也推荐它。</p>
+                        <div class="testimonial-author">
+                            <img src="img/user3.jpg" alt="用户头像" class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name" data-i18n="testimonialName3">王建国</div>
+                                <div class="author-title" data-i18n="testimonialTitle3">心理咨询师, 38岁</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="usage-scenes" class="usage-scenes">
+        <div class="container">
+            <h2 class="section-title" data-i18n="usageScenesTitle">应用场景</h2>
+            
+            <div class="scenes-grid">
+                <div class="scene-card">
+                    <div class="scene-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 data-i18n="scene1Title">职场压力</h3>
+                    <p data-i18n="scene1Desc">面对主管批评，暗示"他言如镜，照我精进处"，转化压力为成长动力</p>
+                </div>
+                
+                <div class="scene-card">
+                    <div class="scene-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 data-i18n="scene2Title">家庭冲突</h3>
+                    <p data-i18n="scene2Desc">与家人争执前，暗示"一体之仁，推己及人"，建立换位思考的共情能力</p>
+                </div>
+                
+                <div class="scene-card">
+                    <div class="scene-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 data-i18n="scene3Title">情绪管理</h3>
+                    <p data-i18n="scene3Desc">感到焦虑时，启动"不动心"练习，暗示"情绪如云，吾心如天"</p>
+                </div>
+                
+                <div class="scene-card">
+                    <div class="scene-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 data-i18n="scene4Title">拖延症</h3>
+                    <p data-i18n="scene4Desc">面对任务拖延，暗示"知而不行，只是未知"，激发行动力</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="devices" class="devices">
+        <div class="container">
+            <h2 class="section-title" data-i18n="devicesTitle">多端联动</h2>
+            
+            <div class="devices-showcase">
+                <div class="device device-mobile">
+                    <img src="img/mobile-app.png" alt="心镜移动应用" class="device-img">
+                    <h3 data-i18n="deviceMobile">移动应用</h3>
+                    <p data-i18n="deviceMobileDesc">随时随地获取暗示和记录感悟</p>
+                </div>
+                
+                <div class="device device-wechat">
+                    <img src="img/wechat-mini.png" alt="心镜微信小程序" class="device-img">
+                    <h3 data-i18n="deviceWechat">微信小程序</h3>
+                    <p data-i18n="deviceWechatDesc">一键进入，便捷分享心得</p>
+                </div>
+                
+                <div class="device device-bracelet">
+                    <img src="img/smart-bracelet.png" alt="心镜智能手环" class="device-img">
+                    <h3 data-i18n="deviceBracelet">心学罗盘手环</h3>
+                    <p data-i18n="deviceBraceletDesc">生物数据感知，振动提醒</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title" data-i18n="pricingTitle">订阅方案</h2>
+            <p class="pricing-subtitle" data-i18n="pricingSubtitle">心的成长无价，但工具可以更经济实惠</p>
+            
+            <div class="pricing-plans">
+                <div class="plan-card">
+                    <div class="plan-badge" data-i18n="freePlan">免费版</div>
+                    <div class="plan-price">
+                        <span class="price">¥0</span>
+                        <span class="period" data-i18n="forever">永久</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li data-i18n="freePlan1">基础暗示库 (100条)</li>
+                        <li data-i18n="freePlan2">心流日记基础功能</li>
+                        <li data-i18n="freePlan3">每日一句阳明语录</li>
+                        <li data-i18n="freePlan4">社区只读权限</li>
+                    </ul>
+                    <a href="#download" class="plan-btn" data-i18n="getFree">免费获取</a>
+                </div>
+                
+                <div class="plan-card popular">
+                    <div class="popular-badge" data-i18n="mostPopular">最受欢迎</div>
+                    <div class="plan-badge" data-i18n="proPlan">专业版</div>
+                    <div class="plan-price">
+                        <span class="price">¥28</span>
+                        <span class="period" data-i18n="monthly">每月</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li data-i18n="proPlan1">高级暗示库 (1000+条)</li>
+                        <li data-i18n="proPlan2">心流日记完整功能</li>
+                        <li data-i18n="proPlan3">AI场景识别与推荐</li>
+                        <li data-i18n="proPlan4">冲突化解模拟器</li>
+                        <li data-i18n="proPlan5">社区完整权限</li>
+                        <li data-i18n="proPlan6">数据云同步</li>
+                    </ul>
+                    <a href="#download" class="plan-btn primary" data-i18n="startPro">开始专业版</a>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="plan-badge" data-i18n="familyPlan">家庭版</div>
+                    <div class="plan-price">
+                        <span class="price">¥58</span>
+                        <span class="period" data-i18n="monthly">每月</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li data-i18n="familyPlan1">最多6个家庭成员</li>
+                        <li data-i18n="familyPlan2">专业版全部功能</li>
+                        <li data-i18n="familyPlan3">家庭共修空间</li>
+                        <li data-i18n="familyPlan4">亲子暗示专区</li>
+                        <li data-i18n="familyPlan5">家庭传习录</li>
+                        <li data-i18n="familyPlan6">家庭仪式助手</li>
+                    </ul>
+                    <a href="#download" class="plan-btn" data-i18n="startFamily">开始家庭版</a>
+                </div>
+            </div>
+            
+            <div class="guarantee">
+                <div class="guarantee-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <p class="guarantee-text" data-i18n="guarantee">14天无条件退款保证，无风险体验</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title" data-i18n="faqTitle">常见问题</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq1Q">我不了解阳明心学，能使用这款App吗？</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq1A">完全可以！心镜专为阳明心学初学者设计，内置简明教程和情境化应用引导。您无需预先了解心学理论，通过使用过程自然习得精华。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq2Q">心镜与其他心理健康App有什么不同？</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq2A">心镜独特之处在于将东方智慧与现代心理技术融合。不同于纯西方心理学方法，心镜基于阳明心学"心外无物"的理念，通过暗示重塑认知，注重行动落实，并强调良知的道德指引作用。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq3Q">数据隐私如何保障？</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq3A">我们高度重视用户隐私。所有个人日记和感悟数据采用端到端加密，且默认仅存储在本地。您可以选择性地将数据上传至云端或以区块链方式加密存储，确保数据安全同时允许多设备同步。</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq4Q">心学罗盘手环需要额外购买吗？</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq4A">是的，心学罗盘手环需要单独购买。年付专业版或家庭版用户可享7折优惠。手环虽非必需，但能提供生物数据感知、定时提醒等增强功能，让心学实践更加沉浸。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title" data-i18n="downloadTitle">立即下载，开启心灵之旅</h2>
+            <p class="download-subtitle" data-i18n="downloadSubtitle">每一次暗示，都是对内心圣人的唤醒；每一次行动，皆成修身齐家的刻度</p>
+            
+            <div class="download-options">
+                <a href="#" class="download-btn app-store">
+                    <i class="fab fa-apple"></i>
+                    <span class="btn-text">
+                        <span class="small-text" data-i18n="downloadOn">下载自</span>
+                        <span class="large-text">App Store</span>
+                    </span>
+                </a>
+                
+                <a href="#" class="download-btn google-play">
+                    <i class="fab fa-google-play"></i>
+                    <span class="btn-text">
+                        <span class="small-text" data-i18n="downloadOn">下载自</span>
+                        <span class="large-text">Google Play</span>
+                    </span>
+                </a>
+                
+                <a href="#" class="download-btn wechat">
+                    <i class="fab fa-weixin"></i>
+                    <span class="btn-text">
+                        <span class="small-text" data-i18n="scanQR">扫描二维码</span>
+                        <span class="large-text" data-i18n="wechatMini">微信小程序</span>
+                    </span>
+                </a>
+            </div>
+            
+            <div class="qr-code">
+                <img src="img/qr-code.svg" alt="心镜微信小程序二维码" class="qr-img">
+            </div>
+            
+            <div class="download-counter">
+                <div class="counter-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <div class="counter-text">
+                    <span class="counter-number">50,000+</span>
+                    <span class="counter-label" data-i18n="downloads">次下载</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="img/heart-mirror-logo.svg" alt="心镜 Logo" class="footer-logo-img">
+                    <span class="footer-logo-text" data-i18n="footerLogo">心镜</span>
+                </div>
+                
+                <div class="footer-nav">
+                    <div class="footer-nav-column">
+                        <h4 data-i18n="footerProduct">产品</h4>
+                        <ul>
+                            <li><a href="#features" data-i18n="footerFeatures">功能</a></li>
+                            <li><a href="#pricing" data-i18n="footerPricing">价格</a></li>
+                            <li><a href="#app-preview" data-i18n="footerPreview">App预览</a></li>
+                            <li><a href="#download" data-i18n="footerDownload">下载</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h4 data-i18n="footerResources">资源</h4>
+                        <ul>
+                            <li><a href="#" data-i18n="footerBlog">博客</a></li>
+                            <li><a href="#" data-i18n="footerYangming">阳明心学</a></li>
+                            <li><a href="#" data-i18n="footerGuide">使用指南</a></li>
+                            <li><a href="#faq" data-i18n="footerFAQ">常见问题</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h4 data-i18n="footerCompany">公司</h4>
+                        <ul>
+                            <li><a href="#" data-i18n="footerAbout">关于我们</a></li>
+                            <li><a href="#" data-i18n="footerCareers">招贤纳士</a></li>
+                            <li><a href="#" data-i18n="footerContact">联系我们</a></li>
+                            <li><a href="#" data-i18n="footerPress">媒体报道</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h4 data-i18n="footerLegal">法律</h4>
+                        <ul>
+                            <li><a href="#" data-i18n="footerTerms">服务条款</a></li>
+                            <li><a href="#" data-i18n="footerPrivacy">隐私政策</a></li>
+                            <li><a href="#" data-i18n="footerCookies">Cookie政策</a></li>
+                            <li><a href="#" data-i18n="footerLicenses">开源许可</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+                
+                <div class="copyright">
+                    <p data-i18n="copyright"> 2023 心镜团队 版权所有</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</body>
 </html>

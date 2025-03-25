@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心镜 - 心流日记</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">9:41</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- 主界面 -->
+        <div class="main-screen">
+            <!-- 页面装饰 -->
+            <div class="decoration-element top-left"></div>
+            <div class="decoration-element top-right"></div>
+            <div class="decoration-element bottom-left"></div>
+            <div class="decoration-element bottom-right"></div>
+            
+            <!-- 顶部导航 -->
+            <div class="top-nav">
+                <div class="back-button">
+                    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+                </div>
+                <h1 class="page-title">心流日记</h1>
+                <div class="nav-icons">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <!-- 心流日记内容 -->
+            <div class="main-content">
+                <div class="journal-header">
+                    <div class="calendar-view">
+                        <div class="month-selector">
+                            <i class="fas fa-chevron-left"></i>
+                            <span>2023年9月</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="calendar-days">
+                            <div class="day-item">一</div>
+                            <div class="day-item">二</div>
+                            <div class="day-item">三</div>
+                            <div class="day-item">四</div>
+                            <div class="day-item">五</div>
+                            <div class="day-item">六</div>
+                            <div class="day-item">日</div>
+                            
+                            <div class="date-item empty"></div>
+                            <div class="date-item empty"></div>
+                            <div class="date-item empty"></div>
+                            <div class="date-item empty"></div>
+                            <div class="date-item">1</div>
+                            <div class="date-item">2</div>
+                            <div class="date-item">3</div>
+                            
+                            <div class="date-item">4</div>
+                            <div class="date-item">5</div>
+                            <div class="date-item">6</div>
+                            <div class="date-item">7</div>
+                            <div class="date-item">8</div>
+                            <div class="date-item">9</div>
+                            <div class="date-item">10</div>
+                            
+                            <div class="date-item">11</div>
+                            <div class="date-item">12</div>
+                            <div class="date-item has-entry">13</div>
+                            <div class="date-item has-entry active">14</div>
+                            <div class="date-item">15</div>
+                            <div class="date-item">16</div>
+                            <div class="date-item">17</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journal-entries">
+                    <div class="section-header">
+                        <div class="section-title">9月14日 星期二</div>
+                        <div class="section-actions">
+                            <button class="new-entry-btn">
+                                <i class="fas fa-plus"></i>
+                                <span>新建</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="entry-item">
+                        <div class="entry-time">19:30</div>
+                        <div class="entry-content">
+                            <div class="entry-title">今日工作反思</div>
+                            <div class="entry-summary">
+                                <p>今日与团队成员讨论项目进度时，有些急躁，未能倾听他人意见。事后反思，发现自己受情绪影响，忽视了"推己及人"的道理。</p>
+                                <p>应用暗示："一体之仁，推己及人"，明日将更多倾听他人。</p>
+                            </div>
+                            <div class="entry-tags">
+                                <span class="tag">工作反思</span>
+                                <span class="tag">情绪管理</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="entry-item">
+                        <div class="entry-time">08:15</div>
+                        <div class="entry-content">
+                            <div class="entry-title">晨间良知省察</div>
+                            <div class="entry-summary">
+                                <p>早起省察今日目标：专注工作，少看手机；与家人耐心沟通；处理完拖延已久的邮件。</p>
+                                <p>设定暗示："知而不行，只是未知"，今日务必落实计划。</p>
+                            </div>
+                            <div class="entry-tags">
+                                <span class="tag">晨间计划</span>
+                                <span class="tag">目标设定</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="previous-entries">
+                    <div class="section-header">
+                        <div class="section-title">9月13日 星期一</div>
+                    </div>
+                    
+                    <div class="entry-item">
+                        <div class="entry-time">21:45</div>
+                        <div class="entry-content">
+                            <div class="entry-title">家庭沟通突破</div>
+                            <div class="entry-summary">
+                                <p>今晚与妻子长谈，应用"吾心如镜"暗示，尝试放下预设立场，真诚倾听。</p>
+                                <p>结果：沟通顺畅，双方都感到被理解，解决了困扰多日的分歧。</p>
+                            </div>
+                            <div class="entry-tags">
+                                <span class="tag">家庭关系</span>
+                                <span class="tag">沟通技巧</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="bottom-nav">
+            <div class="nav-item">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-home"></i>
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="suggestion-library.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-compass"></i>
+                    <span>探索</span>
+                </a>
+            </div>
+            <div class="nav-item center-item">
+                <a href="meditation.html" style="text-decoration: none; color: inherit;">
+                    <div class="center-btn">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-item active">
+                <a href="journal.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-chart-line"></i>
+                    <span>成长</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="profile.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-user"></i>
+                    <span>我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

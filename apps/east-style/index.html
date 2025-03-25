@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心镜 - 东方美学风格 App 原型</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">9:41</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+
+        <!-- 主界面 -->
+        <div class="main-screen">
+            <!-- 页面装饰 -->
+            <div class="decoration-element top-left"></div>
+            <div class="decoration-element top-right"></div>
+            <div class="decoration-element bottom-left"></div>
+            <div class="decoration-element bottom-right"></div>
+            
+            <!-- 顶部导航 -->
+            <div class="top-nav">
+                <div class="user-profile">
+                    <div class="avatar-frame">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="用户头像" class="user-avatar">
+                    </div>
+                    <div class="welcome-text">
+                        <span class="greeting">下午好，</span>
+                        <span class="username">李明</span>
+                    </div>
+                </div>
+                <div class="nav-icons">
+                    <i class="fas fa-bell notification-icon"></i>
+                    <div class="notification-badge">2</div>
+                </div>
+            </div>
+
+            <!-- 主要内容区 -->
+            <div class="main-content">
+                <!-- 精神语录 -->
+                <div class="quote-card">
+                    <div class="quote-header">
+                        <div class="quote-title">今日格言</div>
+                        <div class="quote-date">辛丑年七月廿八</div>
+                    </div>
+                    <div class="quote-content">
+                        <div class="quote-text">"吾心如镜，澄明照物，物来则应，物去不留"</div>
+                        <div class="quote-source">— 王阳明《传习录》</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="action-btn">
+                            <i class="fas fa-bookmark"></i>
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 心学能量 -->
+                <div class="energy-section">
+                    <div class="section-header">
+                        <div class="section-title">心学能量环</div>
+                        <div class="view-more">详情</div>
+                    </div>
+                    <div class="energy-metrics">
+                        <div class="metric-item">
+                            <div class="metric-circle" data-value="75">
+                                <svg width="80" height="80" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" fill="none" stroke="#e9e5e0" stroke-width="8"/>
+                                    <circle cx="50" cy="50" r="40" fill="none" stroke="#8d6e63" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="62.8"/>
+                                    <text x="50" y="55" text-anchor="middle" fill="#4e342e" font-size="20">75</text>
+                                </svg>
+                            </div>
+                            <div class="metric-name">澄明值</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-circle" data-value="60">
+                                <svg width="80" height="80" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" fill="none" stroke="#e9e5e0" stroke-width="8"/>
+                                    <circle cx="50" cy="50" r="40" fill="none" stroke="#a1887f" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="100.48"/>
+                                    <text x="50" y="55" text-anchor="middle" fill="#4e342e" font-size="20">60</text>
+                                </svg>
+                            </div>
+                            <div class="metric-name">躬行力</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-circle" data-value="85">
+                                <svg width="80" height="80" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" fill="none" stroke="#e9e5e0" stroke-width="8"/>
+                                    <circle cx="50" cy="50" r="40" fill="none" stroke="#6d4c41" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="37.68"/>
+                                    <text x="50" y="55" text-anchor="middle" fill="#4e342e" font-size="20">85</text>
+                                </svg>
+                            </div>
+                            <div class="metric-name">良知度</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 功能模块 -->
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <a href="journal.html" style="text-decoration: none;">
+                            <div class="feature-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div class="feature-name">心流日记</div>
+                        </a>
+                    </div>
+                    <div class="feature-item">
+                        <a href="suggestion-library.html" style="text-decoration: none;">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="feature-name">暗示库</div>
+                        </a>
+                    </div>
+                    <div class="feature-item">
+                        <a href="meditation.html" style="text-decoration: none;">
+                            <div class="feature-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <div class="feature-name">冥想练习</div>
+                        </a>
+                    </div>
+                    <div class="feature-item">
+                        <a href="community.html" style="text-decoration: none;">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-name">共修社区</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 最近暗示记录 -->
+                <div class="recent-section">
+                    <div class="section-header">
+                        <div class="section-title">最近暗示</div>
+                        <div class="view-more">查看全部</div>
+                    </div>
+                    <div class="records-list">
+                        <div class="record-item">
+                            <div class="record-time">今日 申时</div>
+                            <div class="record-content">
+                                <div class="record-text">"事上磨练，方知本心"</div>
+                                <div class="record-scenario">应用场景：工作压力</div>
+                            </div>
+                        </div>
+                        <div class="record-item">
+                            <div class="record-time">昨日 戌时</div>
+                            <div class="record-content">
+                                <div class="record-text">"知而不行，只是未知"</div>
+                                <div class="record-scenario">应用场景：拖延症</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="bottom-nav">
+            <div class="nav-item active">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-home"></i>
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="suggestion-library.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-compass"></i>
+                    <span>探索</span>
+                </a>
+            </div>
+            <div class="nav-item center-item">
+                <a href="meditation.html" style="text-decoration: none; color: inherit;">
+                    <div class="center-btn">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="journal.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-chart-line"></i>
+                    <span>成长</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="profile.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-user"></i>
+                    <span>我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
